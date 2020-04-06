@@ -17,18 +17,17 @@ export default function Index() {
           <Link
             href="https://github.com/maheswaranapk/CSS-Experiments"
             prefetch={false}
-            target="_blank"
           >
             Source Code here
           </Link>
         </div>
         {list.map((item) => (
-          <Link href={item.path}>
-            <div class="card cursor-pointer mt-3 col-12 col-xl-6">
-              <div class="card-body">
-                <a>{item.name + " Demo"}</a>
+          <Link href={item.path} key={item.name}>
+            <a className="col-12">
+              <div className="card cursor-pointer mt-3 col-xl-6">
+                <div className="card-body">{item.name + " Demo"}</div>
               </div>
-            </div>
+            </a>
           </Link>
         ))}
       </div>

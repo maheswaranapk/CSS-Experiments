@@ -1,4 +1,10 @@
 const withSass = require('@zeit/next-sass')
 module.exports = withSass({
-  /* config options here */
+  exportTrailingSlash: true,
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' },
+      '/linear-reveal': { page: '/linear-reveal' },
+    };
+  }
 })
