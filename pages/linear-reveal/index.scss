@@ -1,0 +1,93 @@
+@import "../index.scss";
+
+.linear-reveal-container {
+  background-color: black;
+
+  .linear-reveal-parent {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+
+    background-image: url("/linear-reveal.jpg"),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    font-size: 3rem;
+
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation: fadeIn 4s;
+
+    @include media-breakpoint-up(md) {
+      font-size: 6rem;
+    }
+
+    .reveal-anim-container {
+      position: relative;
+      overflow: hidden;
+      .reveal-text {
+        animation: text-color 0s;
+        animation-delay: 3.5s;
+        animation-fill-mode: both;
+      }
+      .reveal-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        z-index: 1000;
+
+        background-color: #ecb22e;
+        
+        animation: text-revealer 1s;
+        animation-delay: 3s;
+        animation-fill-mode: both;
+      }
+    }
+
+    .courtesy {
+      position: absolute;
+      bottom: 0;
+      font-size: 1rem;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes text-revealer {
+      0% {
+        transform: translateX(-101%);
+      }
+      50% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(101%);
+      }
+    }
+
+    @keyframes text-color {
+      0% {
+        color: transparent;
+      }
+      99% {
+        color: transparent;
+      }
+      100% {
+        color: white;
+      }
+    }
+  }
+}
