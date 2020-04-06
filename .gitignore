@@ -1,4 +1,7 @@
 node_modules
 .next/
 .DS_Store
-.out/
+.firebaserc
+out/
+firebase.json
+.firebase/
