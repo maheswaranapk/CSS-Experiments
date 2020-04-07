@@ -1,0 +1,94 @@
+@import "../index.scss";
+
+.text-push-container {
+  background-color: #00011c;
+  min-height: 100vh;
+  min-width: 100vw;    
+  user-select: none;
+
+  .text-parent {
+    overflow: hidden;
+    font-size: 2.3rem;
+    animation: textParent 10s;
+    animation-iteration-count: infinite;
+    .main-text {
+      background-color: #00011c;
+      color: white;
+      white-space: nowrap;
+      z-index: 300;
+    }
+    .sec-text {
+      color: #36b6e3;
+      z-index: 200;
+      margin-left: -24.2rem;
+      white-space: nowrap;
+      animation: secText 10s;
+      animation-iteration-count: infinite;
+    }
+  }
+  .name-text {
+    font-size: 1.1rem;
+    color: #EEEEEE;
+    animation: nameText 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes textParent {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes secText {
+    0% {
+      margin-left: -24.2rem;
+    }
+    20% {
+      margin-left: -24.2rem;
+    }
+    40% {
+      margin-left: 0;
+    }
+    60% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
+
+  @keyframes nameText {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

@@ -9,7 +9,11 @@ const list = [
   {
     name: "Hover Flip",
     path: "/hover-flip",
-  },
+  }, 
+  {
+    name: "Text Push",
+    path: "/text-push"
+  }
 ];
 
 export default function Index() {
@@ -26,7 +30,7 @@ export default function Index() {
           </Link>
         </div>
         {list.map((item) => (
-          <div className="mt-3 px-2 col-12 col-xl-6">
+          <div className="mt-3 px-2 col-12 col-lg-6">
             <Link href={item.path} key={item.name} prefetch={true}>
               <a className="card cursor-pointer">
                 <div className="card-body">{item.name + " Demo"}</div>
