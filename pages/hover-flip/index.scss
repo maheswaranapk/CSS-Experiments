@@ -1,0 +1,64 @@
+@import "../index.scss";
+
+.hover-flip-container {
+  background: #232323;
+  .container {
+    min-height: 100vh;
+
+    .giraffee {
+      background-image: url("/hover-flip/Giraffe.jpg");
+    }
+    .deer {
+      background-image: url("/hover-flip/Deer.jpg");
+    }
+    .zebra {
+      background-image: url("/hover-flip/Zebra.jpg");
+    }
+
+    .flip-card {
+      height: 375px;
+      width: 250px;
+      border-radius: 0.75rem;
+      position: relative;
+      transition: transform 1.5s;
+      transform-style: preserve-3d;
+
+      &:hover {
+        transform: rotateY(180deg);
+      }
+
+      .front,
+      .back {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+        position: absolute;
+        backface-visibility: hidden;
+        color: white;
+      }
+
+      .front {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: overlay;
+      }
+
+      .back {
+        color: white;
+        background: black;
+        text-align: center;
+        line-height: 375px;
+        font-size: 3.5rem;
+        transform: rotateY(180deg);
+      }
+    }
+
+    .courtesy {
+      position: absolute;
+      bottom: 0;
+      font-size: 1rem;
+      color: white;
+    }
+  }
+}

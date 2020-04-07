@@ -5,6 +5,7 @@ module.exports = withSass({
     return {
       '/': { page: '/' },
       '/linear-reveal': { page: '/linear-reveal' },
+      '/hover-flip': { page: '/hover-flip' },
     };
   }
 })

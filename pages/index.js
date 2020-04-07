@@ -6,6 +6,10 @@ const list = [
     name: "Linear Reveal",
     path: "/linear-reveal",
   },
+  {
+    name: "Hover Flip",
+    path: "/hover-flip",
+  },
 ];
 
 export default function Index() {
@@ -22,13 +26,13 @@ export default function Index() {
           </Link>
         </div>
         {list.map((item) => (
-          <Link href={item.path} key={item.name}>
-            <a className="col-12">
-              <div className="card cursor-pointer mt-3 col-xl-6">
+          <div className="mt-3 px-2 col-12 col-xl-6">
+            <Link href={item.path} key={item.name} prefetch={true}>
+              <a className="card cursor-pointer">
                 <div className="card-body">{item.name + " Demo"}</div>
-              </div>
-            </a>
-          </Link>
+              </a>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
