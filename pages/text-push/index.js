@@ -16,7 +16,7 @@ export default function TextPush() {
         </span>
       </div>
       <div className="name-text  d-none d-md-block mt-4">
-        Tyrion Lannister ( Hand of the Queen )
+        Tyrion Lannister
       </div>
       <div className="d-block d-md-none text-white">Open in Desktop</div>
     </div>

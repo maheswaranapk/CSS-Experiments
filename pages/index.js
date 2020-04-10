@@ -1,19 +1,34 @@
 import Link from "next/link";
 import "./index.scss";
+import { Fragment } from "react";
 
 const list = [
   {
-    name: "Linear Reveal",
-    path: "/linear-reveal",
+    categoryName: "Screen",
+    categoryList: [
+      {
+        name: "Day Night",
+        path: "/day-night",
+      },
+    ],
   },
   {
-    name: "Hover Flip",
-    path: "/hover-flip",
-  }, 
-  {
-    name: "Text Push",
-    path: "/text-push"
-  }
+    categoryName: "Reveal",
+    categoryList: [
+      {
+        name: "Linear Reveal",
+        path: "/linear-reveal",
+      },
+      {
+        name: "Hover Flip",
+        path: "/hover-flip",
+      },
+      {
+        name: "Text Push",
+        path: "/text-push",
+      },
+    ],
+  },
 ];
 
 export default function Index() {
@@ -29,14 +44,19 @@ export default function Index() {
             Source Code here
           </Link>
         </div>
-        {list.map((item) => (
-          <div className="mt-3 px-2 col-12 col-lg-6">
-            <Link href={item.path} key={item.name} prefetch={true}>
-              <a className="card cursor-pointer">
-                <div className="card-body">{item.name + " Demo"}</div>
-              </a>
-            </Link>
-          </div>
+        {list.map((category) => (
+          <Fragment>
+            <h4 className="col-12 mt-3">{category.categoryName}</h4>
+            {category.categoryList.map((item) => (
+              <div className="mt-3 px-2 col-12 col-lg-6">
+                <Link href={item.path} key={item.name} prefetch={true}>
+                  <a className="card cursor-pointer">
+                    <div className="card-body">{item.name + " Demo"}</div>
+                  </a>
+                </Link>
+              </div>
+            ))}
+          </Fragment>
         ))}
       </div>
     </div>
