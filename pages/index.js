@@ -10,6 +10,10 @@ const list = [
         name: "Day Night",
         path: "/day-night",
       },
+      {
+        name: "Planet",
+        path: "/planet"
+      }
     ],
   },
   {

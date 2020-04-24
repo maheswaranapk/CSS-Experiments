@@ -1,0 +1,147 @@
+@import "../index.scss";
+
+.planet-container {
+  background: #09040c;
+  min-height: 100vh;
+
+  .planet-parent {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-image: radial-gradient(
+      #5f02dc,
+      rgba(95, 2, 220, 0.8),
+      rgba(95, 2, 220, 0.4),
+      #09040c,
+      #09040c
+    );
+
+    @include media-breakpoint-up(md) {
+      width: 500px;
+      height: 500px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 600px;
+      height: 600px;
+    }
+
+    .sun {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 40%;
+      height: 40%;
+      background: #5f02dc;
+      border-radius: 50%;
+      z-index: 1000;
+    }
+
+    .planet-1 {
+      position: absolute;
+      width: 18%;
+      height: 18%;
+      border-radius: 50%;
+      background: #f92ec5;
+      animation: planetAnim 2.8s infinite, planet1Anim 2.8s infinite;
+      z-index: 1500;
+    }
+
+    .planet-2 {
+      position: absolute;
+      width: 11%;
+      height: 11%;
+      border-radius: 50%;
+      background: #e84fdb;
+      animation-delay: 1s;
+      animation: planetAnim 2.3s infinite, planet2Anim 2.3s infinite;
+      z-index: 1500;
+    }
+
+    .planet-3 {
+      position: absolute;
+      width: 5%;
+      height: 5%;
+      border-radius: 50%;
+      background: #fb96e0;
+      animation-delay: 0.5s;
+      animation: planetAnim 1.5s infinite, planet3Anim 1.5s infinite;
+      z-index: 1500;
+    }
+  }
+
+  .courtesy {
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    color: white;
+  }
+}
+
+@keyframes planet3Anim {
+  0% {
+    left: 75%;
+    top: 25%;
+  }
+  50% {
+    left: 25%;
+    top: 75%;
+  }
+  100% {
+    left: 75%;
+    top: 25%;
+  }
+}
+
+@keyframes planet2Anim {
+  0% {
+    left: 35%;
+    top: 75%;
+  }
+  50% {
+    left: 55%;
+    top: 25%;
+  }
+  100% {
+    left: 35%;
+    top: 75%;
+  }
+}
+
+@keyframes planet1Anim {
+  0% {
+    left: 10%;
+    top: 20%;
+  }
+  50% {
+    left: 90%;
+    top: 80%;
+  }
+  100% {
+    left: 10%;
+    top: 20%;
+  }
+}
+
+@keyframes planetAnim {
+  0% {
+    z-index: 1000;
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+  25% {
+    z-index: 1500;
+    transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    z-index: 1000;
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+  75% {
+    z-index: 500;
+    transform: scale(0.6) translate(-50%, -50%);
+  }
+  100% {
+    z-index: 1000;
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+}

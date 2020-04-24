@@ -14,7 +14,6 @@ $time: 2s;
     overflow: hidden;
 
     background: linear-gradient(to left, #e01f00, #e75b00);
-    transition: all $time ease-in-out;
 
     @include media-breakpoint-up(md) {
       width: 450px;
@@ -34,7 +33,6 @@ $time: 2s;
     .sun {
       width: 80%;
       height: 80%;
-      border-radius: 50%;
       left: 10%;
       top: 20%;
       transition: all $time ease;
@@ -44,7 +42,6 @@ $time: 2s;
         height: 100%;
         border-radius: 50%;
         background: linear-gradient(to left, #ee4900, #f58d00);
-        transition: all $time ease;
         box-shadow: 0 0 20px rgba(244, 201, 22, 0.5);
         animation: fadeIn $time;
       }
@@ -56,7 +53,6 @@ $time: 2s;
         left: 15%;
         border-radius: 50%;
         background: linear-gradient(to left, #f67c00, #f6a100);
-        transition: all $time ease;
         animation: fadeIn $time;
       }
 
@@ -203,7 +199,6 @@ $time: 2s;
 
     .day-night-parent {
       background: linear-gradient(to left, #223966, #223663);
-      transition: all $time ease-in-out;
 
       .land {
         background: #4a8993;
@@ -214,7 +209,6 @@ $time: 2s;
         transition: all $time ease;
         .outer-ray,
         .inner-ray {
-          background-position: 100%;
           animation: fadeOut $time;
           animation-fill-mode: both;
         }

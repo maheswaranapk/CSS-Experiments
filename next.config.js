@@ -8,6 +8,8 @@ module.exports = withSass({
       '/hover-flip': { page: '/hover-flip' },
       '/text-push': { page: '/text-push' },
       '/day-night': { page: '/day-night' },
+      '/shadow-util': {page: '/shadow-util'},
+      '/planet': {page: '/planet'}
     };
   },
 });
