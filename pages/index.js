@@ -33,6 +33,15 @@ const list = [
       },
     ],
   },
+  {
+    categoryName: "Component",
+    categoryList: [
+      {
+        name: "Day Night Switch",
+        path: "/day-night-switch",
+      }
+    ],
+  },
 ];
 
 export default function Index() {

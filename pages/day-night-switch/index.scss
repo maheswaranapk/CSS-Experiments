@@ -1,0 +1,58 @@
+@import "../index.scss";
+// Keep height and width in 1:2 ratio
+$height: 150px;
+$width: 300px;
+
+#day-night-switch-container {
+  background: #dadada;
+  min-height: 100vh;
+  transition: background 1.5s;
+
+  .switch {
+    width: $width;
+    height: $height;
+    border-radius: calc(0.8 * #{$height});
+    background: #27173a;
+    overflow: hidden;
+  }
+
+  .indicator,
+  .moon-shadow {
+    top: 10%;
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+    transition-delay: 0.2s;
+    transition: left 1.3s;
+  }
+  .indicator {
+    left: 5%;
+    background: #fcc204;
+  }
+
+  .moon-shadow {
+    left: -36%;
+    background: #27173a;
+  }
+
+  .courtesy {
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    color: #030205;
+    transition: color 1.5s;
+  }
+
+  &.switched {
+    background: #030205;
+    .indicator {
+      left: 55%;
+    }
+    .moon-shadow {
+      left: 40%;
+    }
+    .courtesy {
+      color: #dadada;
+    }
+  }
+}

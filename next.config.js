@@ -9,7 +9,8 @@ module.exports = withSass({
       '/text-push': { page: '/text-push' },
       '/day-night': { page: '/day-night' },
       '/shadow-util': {page: '/shadow-util'},
-      '/planet': {page: '/planet'}
+      '/planet': {page: '/planet'},
+      '/day-night-switch': {page: '/day-night-switch'}
     };
   },
 });
