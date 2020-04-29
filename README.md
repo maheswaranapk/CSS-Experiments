@@ -7,3 +7,7 @@ To run this Project
     $ npm install
     $ npm run dev
 ```
+
+### LOC
+<img src="https://git-cloc.fly.dev/cloc/maheswaranapk/CSS-Experiments/svg">
+
