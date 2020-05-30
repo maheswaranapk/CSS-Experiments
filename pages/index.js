@@ -42,6 +42,15 @@ const list = [
       }
     ],
   },
+  {
+    categoryName: "Creative CSS",
+    categoryList: [
+      {
+        name: "Envelope",
+        path: "/creative-css/envelope",
+      }
+    ],
+  },
 ];
 
 export default function Index() {
@@ -61,7 +70,7 @@ export default function Index() {
           <Fragment>
             <h4 className="col-12 mt-3">{category.categoryName}</h4>
             {category.categoryList.map((item) => (
-              <div className="mt-3 px-2 col-12 col-lg-6">
+              <div className="mt-3 px-2 col-12 col-lg-6 col-xl-3">
                 <Link href={item.path} key={item.name} prefetch={true}>
                   <a className="card cursor-pointer">
                     <div className="card-body">{item.name + " Demo"}</div>
