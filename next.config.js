@@ -11,7 +11,7 @@ module.exports = withSass({
       '/shadow-util': {page: '/shadow-util'},
       '/planet': {page: '/planet'},
       '/day-night-switch': {page: '/day-night-switch'},
-      '/creative-css/envelope': {page: '/creative-css/envelope'}
+      '/reveal/envelope': {page: '/reveal/envelope'}
     };
   },
 });
