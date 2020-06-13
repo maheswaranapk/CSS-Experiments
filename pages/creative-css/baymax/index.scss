@@ -1,0 +1,68 @@
+@import "../../index.scss";
+
+$dark: #317bd9;
+$light: #1aa1d2;
+
+$time: 8s;
+
+#baymax-container {
+  height: 100vh;
+  width: 100vw;
+  background: #fe1111;
+  .baymax-parent {
+    .head {
+      position: relative;
+      margin: 0 auto;
+      width: 100px;
+      height: 70px;
+      border-radius: 50%;
+      background: #fff;
+      border-bottom: 5px solid #e1e1e1;
+      z-index: 10;
+    }
+    .body {
+      margin-top: -20px;
+      
+      position: relative;
+      .chest {
+        position: relative;
+        margin: 0 auto;
+        height: 200px;
+        width: 150px;
+        background: #fff;
+        border-radius: 50%;
+        border: 5px solid #e1e1e1;
+        border-top: none;
+        z-index: 8;
+      }
+      .belly {
+        position: relative;
+        margin: 0 auto;
+        height: 300px;
+        width: 250px;
+        background: #fff;
+        border-radius: 50%;
+        border: 5px solid #e1e1e1;
+        border-top: none;
+        z-index: 10;
+        margin-top: -150px;
+      }
+      .link {
+        width: 163px;
+        height: 40px;
+        position: absolute;
+        top: 75px;
+        left: 43px;
+        background: #fff;
+        z-index: 12;
+      }
+    }
+  }
+
+  .courtesy {
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    color: black;
+  }
+}

@@ -8,11 +8,11 @@ const list = [
     categoryList: [
       {
         name: "Day Night",
-        path: "/day-night",
+        path: "/screen/day-night",
       },
       {
         name: "Planet",
-        path: "/planet"
+        path: "/screen/planet"
       }
     ],
   },
@@ -24,16 +24,20 @@ const list = [
         path: "/reveal/envelope",
       },
       {
+        name: "Dribbble Reveal",
+        path: "/reveal/dribbble-logo",
+      },
+      {
         name: "Linear Reveal",
-        path: "/linear-reveal",
+        path: "/reveal/linear-reveal",
       },
       {
         name: "Hover Flip",
-        path: "/hover-flip",
+        path: "/reveal/hover-flip",
       },
       {
         name: "Text Push",
-        path: "/text-push",
+        path: "/reveal/text-push",
       }, 
     ],
   },
@@ -42,7 +46,7 @@ const list = [
     categoryList: [
       {
         name: "Day Night Switch",
-        path: "/day-night-switch",
+        path: "/component/day-night-switch",
       }
     ],
   },

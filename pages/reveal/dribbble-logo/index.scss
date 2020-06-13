@@ -1,0 +1,263 @@
+@import "../../index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+$time: 11s;
+
+#envelope-container {
+  height: 100vh;
+  width: 100vw;
+  background: #d21240;
+  overflow: hidden;
+
+  .envelope-parent {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+
+    #svg-main-axis {
+      position: absolute;
+      top: 100px;
+      left: -400px;
+
+      #main-axis {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 20;
+        stroke-dasharray: 2512;
+        stroke-dashoffset: 2512;
+        transform-origin: center;
+        transform: rotate(-2deg);
+
+        animation: mainRotate $time infinite;
+      }
+
+      @keyframes mainRotate {
+        0% {
+          stroke: transparent;
+          stroke-dashoffset: 2512;
+        }
+        1% {
+          stroke: white;
+        }
+        8% {
+          stroke-dashoffset: 2810;
+        }
+        70% {
+          stroke-dashoffset: 2810;
+        }
+        77% {
+          stroke: white;
+        }
+        78% {
+          stroke: transparent;
+          stroke-dashoffset: 2512;
+        }
+        100% {
+          stroke: transparent;
+          stroke-dashoffset: 2512;
+        }
+      }
+    }
+
+    #svg-main-circle {
+      position: absolute;
+      top: 150px;
+      left: 150px;
+      #main-circle {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 20;
+        stroke-dasharray: 942;
+        transform-origin: center;
+        animation: rotate $time infinite;
+      }
+
+      @keyframes rotate {
+        0% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(242deg);
+        }
+        7% {
+          stroke: transparent;
+        }
+        8% {
+          stroke: white;
+          stroke-dashoffset: 942;
+          transform: rotate(242deg);
+        }
+        16% {
+          stroke-dashoffset: 1884;
+          transform: rotate(430deg);
+        }
+
+        62% {
+          stroke-dashoffset: 1884;
+          transform: rotate(430deg);
+        }
+        69% {
+          stroke: white;
+        }
+        70% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(242deg);
+        }
+
+        100% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(242deg);
+        }
+      }
+    }
+
+    #svg-axis-1 {
+      position: absolute;
+      top: 320px;
+      left: 200px;
+      #axis-1 {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 20;
+        stroke-dasharray: 942;
+        transform-origin: 50% 50%;
+        animation: axix1rotate $time infinite;
+      }
+
+      @keyframes axix1rotate {
+        0% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(-100deg);
+        }
+        16% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(-100deg);
+        }
+        17% {
+          stroke: white;
+        }
+        24% {
+          stroke-dashoffset: 1210;
+          transform: rotate(-55deg);
+        }
+        56% {
+          stroke-dashoffset: 1210;
+          transform: rotate(-55deg);
+        }
+
+        61% {
+          stroke: white;
+        }
+        62% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(-100deg);
+        }
+        100% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(-100deg);
+        }
+      }
+    }
+    #svg-axis-2 {
+      position: absolute;
+      top: -20px;
+      left: 100px;
+      #axis-2 {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 20;
+        stroke-dasharray: 942;
+        transform-origin: 50% 50%;
+        animation: axix2rotate $time infinite;
+      }
+
+      @keyframes axix2rotate {
+        0% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(68deg);
+        }
+        16% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(68deg);
+        }
+        17% {
+          stroke: white;
+        }
+        24% {
+          stroke-dashoffset: 1220;
+          transform: rotate(126deg);
+        }
+        56% {
+          stroke-dashoffset: 1220;
+          transform: rotate(126deg);
+        }
+
+        61% {
+          stroke: white;
+        }
+        62% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(68deg);
+        }
+        100% {
+          stroke: transparent;
+          stroke-dashoffset: 942;
+          transform: rotate(68deg);
+        }
+      }
+    }
+
+    .dribbble-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Pacifico", cursive;
+      color: white;
+      font-size: 5rem;
+      margin-top: 250px;
+      animation: fadeInOut $time infinite;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      17% {
+        opacity: 0;
+      }
+      27% {
+        opacity: 1;
+      }
+      66% {
+        opacity: 1;
+      }
+      86% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  .courtesy {
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    color: white;
+    transition: color 1.5s;
+  }
+}
