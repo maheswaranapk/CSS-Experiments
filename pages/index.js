@@ -28,6 +28,14 @@ const list = [
         path: "/reveal/dribbble-logo",
       },
       {
+        name: "Google Photos New Logo Reveal",
+        path: "/reveal/google-photos-new-logo",
+      },
+      {
+        name: "Text Push",
+        path: "/reveal/text-push",
+      }, 
+      {
         name: "Linear Reveal",
         path: "/reveal/linear-reveal",
       },
@@ -35,10 +43,6 @@ const list = [
         name: "Hover Flip",
         path: "/reveal/hover-flip",
       },
-      {
-        name: "Text Push",
-        path: "/reveal/text-push",
-      }, 
     ],
   },
   {

@@ -4,14 +4,14 @@ import Head from "next/head";
 export default function Dice() {
   return (
     <div
-      id="envelope-container"
+      id="dribbble-logo-reveal-container"
       className="d-flex flex-column align-items-center justify-content-center position-relative "
     >
       <Head>
         <title>Dribble Logo Reveal</title>
       </Head>
 
-      <div className="envelope-parent">
+      <div className="dribbble-logo-reveal-parent">
         <svg id="svg-main-circle" height="400" width="400">
           <circle
             id="main-circle"

@@ -20,6 +20,7 @@ module.exports = withSass({
       '/reveal/envelope': {page: '/reveal/envelope'},
       '/dribbble-logo-reveal': {page: '/reveal/dribbble-logo'},
       '/reveal/dribbble-logo': {page: '/reveal/dribbble-logo'},
+      '/google-photos-new-logo': {page: '/reveal/google-photos-new-logo'},
       '/shadow-util': {page: '/shadow-util'}
     };
   },

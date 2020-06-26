@@ -1,0 +1,229 @@
+@import "../../index.scss";
+
+$color1: #ffc718;
+$color2: #da483b;
+$color3: #4486f4;
+$color4: #1ca45c;
+
+$color1_dark: #ff9c00;
+$color2_dark: #b1155e;
+$color3_dark: #3769dc;
+$color4_dark: #0ea05a;
+
+$duration: 9s;
+
+#google-photos-new-logo-container {
+  height: 100vh;
+  .old-logo-parent {
+    animation-delay: 2s;
+    animation: spin $duration linear infinite;
+    span {
+      position: absolute;
+      font-size: 130px;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-52%);
+      color: white;
+      animation: center-box-opacity $duration linear infinite;
+    }
+    .support-box {
+      width: 200px;
+      height: 100px;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      border-top: solid 100px $color1_dark;
+      border-right: solid 100px $color2_dark;
+      border-bottom: solid 100px $color3_dark;
+      border-left: solid 100px $color4_dark;
+      animation: center-box-opacity $duration linear infinite;
+    }
+    .left-box {
+      top: 0px;
+      left: -100px;
+      width: 200px;
+      height: 100px;
+      background: transparent;
+      border-radius: 50%/100%;
+
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom: solid 100px $color1;
+      border-left: solid 100px transparent;
+      border-top: solid 0px transparent;
+      border-right: solid 100px transparent;
+
+      animation: color1-anim  $duration linear infinite;
+    }
+    .top-box {
+      top: -100px;
+      left: 100px;
+      width: 100px;
+      height: 200px;
+      background: transparent;
+      border-radius: 100%/50%;
+
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: solid 100px $color2;
+      border-top: solid 100px transparent;
+      border-right: solid 0px transparent;
+      border-bottom: solid 100px transparent;
+      animation: color2-anim  $duration linear infinite;
+    }
+    .right-box {
+      top: 100px;
+      left: 100px;
+      width: 200px;
+      height: 100px;
+      background: transparent;
+      border-radius: 50%/100%;
+
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      border-top: solid 100px $color3;
+      border-left: solid 100px transparent;
+      border-bottom: solid 0px transparent;
+      border-right: solid 100px transparent;
+      animation: color3-anim  $duration linear infinite;
+    }
+
+    .bottom-box {
+      top: 100px;
+      left: 0px;
+      width: 100px;
+      height: 200px;
+      background: transparent;
+      border-radius: 100%/50%;
+
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-right: solid 100px $color4;
+      border-top: solid 100px transparent;
+      border-left: solid 0px transparent;
+      border-bottom: solid 100px transparent;
+      animation: color4-anim  $duration linear infinite;
+    }
+  }
+
+  // Need to simplfy with mixins
+
+  @keyframes color1-anim {
+    0% {
+      background: transparent;
+    }
+    15% {
+      background: transparent;
+    }
+    35% {
+      background: $color1;
+    }
+    100% {
+      background: $color1;
+    }
+  }
+  @keyframes color2-anim {
+    0% {
+      background: transparent;
+    }
+    15% {
+      background: transparent;
+    }
+    35% {
+      background: $color2;
+    }
+    100% {
+      background: $color2;
+    }
+  }
+  @keyframes color3-anim {
+    0% {
+      background: transparent;
+    }
+    15% {
+      background: transparent;
+    }
+    35% {
+      background: $color3;
+    }
+    100% {
+      background: $color3;
+    }
+  }
+  @keyframes color4-anim {
+    0% {
+      background: transparent;
+    }
+    15% {
+      background: transparent;
+    }
+    35% {
+      background: $color4;
+    }
+    100% {
+      background: $color4;
+    }
+  }
+  
+  
+  @keyframes center-box-opacity {
+    0% {
+      opacity: 1;
+    }
+    15% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    20% {
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+    24% {
+      opacity: 1;
+      transform: rotate(720deg);
+    }
+    28% {
+      opacity: 1;
+      transform: rotate(1080deg);
+    }
+    32% {
+      transform: rotate(1440deg);
+    }
+    43% {
+      transform: rotate(1800deg);
+    }
+    75% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(1800deg);
+      opacity: 0;
+    }
+  }
+}
+
+// height: 100px;
+//  border-radius: 50%/100%;
+// background: purple;
+// border-bottom-left-radius: 0;
+// border-bottom-right-radius: 0;
+// border-top: 0;
