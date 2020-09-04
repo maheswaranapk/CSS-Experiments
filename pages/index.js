@@ -54,20 +54,20 @@ const list = [
       }
     ],
   },
-  // {
-  //   categoryName: "Creative CSS",
-  //   categoryList: [
-  //     {
-  //       name: "Envelope",
-  //       path: "/creative-css/envelope",
-  //     }
-  //   ],
-  // },
+  {
+    categoryName: "CSS/SVG Illustration",
+    categoryList: [
+      {
+        name: "Movie Reel",
+        path: "/illustration/movie-reel",
+      }
+    ],
+  },
 ];
 
 export default function Index() {
   return (
-    <div className="container demo-list-container">
+    <div className="container demo-list-container pb-3">
       <div className="row">
         <div className="col-12 mb-2 d-flex align-items-center flex-column">
           <h3 className="my-3">CSS Experiments</h3>

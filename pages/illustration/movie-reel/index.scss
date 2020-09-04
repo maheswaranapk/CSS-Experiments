@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+#reel-container {
+  height: 100vh;
+
+  .reel-parent {
+    width: 360px;
+    height: 360px;
+  }
+}
