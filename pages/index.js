@@ -28,7 +28,7 @@ const list = [
         path: "/reveal/dribbble-logo",
       },
       {
-        name: "Google Photos New Logo Reveal",
+        name: "Google Photos Logo",
         path: "/reveal/google-photos-new-logo",
       },
       {

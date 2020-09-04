@@ -51,7 +51,7 @@ export default function DayNight() {
       </button>
       <div className="courtesy position-absolute m-3">
         <div>
-          Design By{" "}
+          Design Courtesy{" "}
           <a href="https://www.uplabs.com/pilcrowd" title="Pilcrowd">
             Pilcrowd
           </a>{" "}

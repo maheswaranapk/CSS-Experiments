@@ -52,7 +52,7 @@ export default function Dice() {
       </div>
       <div className="courtesy position-absolute m-3">
         <div>
-          Design By{" "}
+          Design Courtesy{" "}
           <a href="https://dribbble.com/nikolarajic" title="Nikola Rajic">
             Nikola Rajic
           </a>{" "}

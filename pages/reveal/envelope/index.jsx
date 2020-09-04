@@ -31,7 +31,7 @@ export default function Dice() {
       <div className="envelope-shadow" />
       <div className="courtesy position-absolute m-3">
         <div>
-          Design By{" "}
+          Design Courtesy{" "}
           <a href="https://dribbble.com/paulgernale" title="Paul Gernale">
             Paul Gernale
           </a>{" "}

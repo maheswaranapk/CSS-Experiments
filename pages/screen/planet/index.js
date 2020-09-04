@@ -16,7 +16,7 @@ export default function Planet() {
 
       <div className="courtesy position-absolute m-3">
         <div>
-          Design By{" "}
+          Design Courtesy{" "}
           <a href="https://dribbble.com/wildflowwer" title="Maxim">
             Maxim
           </a>{" "}

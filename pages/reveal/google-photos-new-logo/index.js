@@ -19,6 +19,14 @@ export default function GooglePhotosNewLogo() {
         <div className="support-box bottom-box position-absolute" />
         <span>&#10022;</span>
       </div>
+      <div className="courtesy position-absolute m-3">
+        <div>
+          Design Inspiration from{" "}
+          <a href="https://twitter.com/googlephotos/status/1276169983660142593" target="_blank" title="Google Photos Tweet">
+          Google Photos Tweet
+          </a>{" "}
+        </div>
+      </div>
     </div>
   );
 }
