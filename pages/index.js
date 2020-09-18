@@ -60,7 +60,11 @@ const list = [
       {
         name: "Movie Reel",
         path: "/illustration/movie-reel",
-      }
+      },
+      {
+        name: "Towel",
+        path: "/illustration/towel",
+      },
     ],
   },
 ];

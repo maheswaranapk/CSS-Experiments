@@ -22,6 +22,7 @@ module.exports = withSass({
       '/reveal/dribbble-logo': {page: '/reveal/dribbble-logo'},
       '/reveal/google-photos-new-logo': {page: '/reveal/google-photos-new-logo'},
       '/illustration/movie-reel': {page: '/illustration/movie-reel'},
+      '/illustration/towel': {page: '/illustration/towel'},
       '/shadow-util': {page: '/shadow-util'}
     };
   },
