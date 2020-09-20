@@ -23,6 +23,7 @@ module.exports = withSass({
       '/reveal/google-photos-new-logo': {page: '/reveal/google-photos-new-logo'},
       '/illustration/movie-reel': {page: '/illustration/movie-reel'},
       '/illustration/towel': {page: '/illustration/towel'},
+      '/illustration/avengers-logo': {page: '/illustration/avengers-logo'},
       '/shadow-util': {page: '/shadow-util'}
     };
   },

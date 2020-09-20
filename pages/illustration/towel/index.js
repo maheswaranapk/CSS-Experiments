@@ -21,12 +21,15 @@ export default function MovieReel() {
           <div className="first">
             <div className="bar" />
           </div>
+          <div className="oval-1" />
           <div className="last">
             <div className="bar" />
           </div>
+          <div className="oval-2" />
           <div className="middle">
             <div className="bar" />
           </div>
+          <div className="oval-3" />
           <div className="shawdow-1"></div>
           <div className="shawdow-2"></div>
         </div>

@@ -1,0 +1,90 @@
+@import "../../index.scss";
+
+$blue: #1849ca;
+$red: #ec2004;
+
+#avenger-logo-container {
+  height: 100vh;
+  background: white;
+  .avenger-logo-parent {
+    width: 360px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+
+    .circle {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      width: 280px;
+      height: 280px;
+      border: solid 20px $red;
+      border-radius: 50%;
+    }
+
+    .a-1 {
+      position: absolute;
+      left: 55%;
+      height: 75%;
+      width: 40px;
+      background: $blue;
+    }
+
+    .a-2 {
+      position: absolute;
+      left: 55%;
+      top: 1%;
+      height: 100%;
+      transform-origin: top;
+      transform: rotate(25deg);
+      width: 40px;
+      background: $blue;
+      z-index: 10;
+    }
+
+    .a-3 {
+      position: absolute;
+      top: calc(49.25% + 40px);
+      height: 40px;
+      left: 106px;
+      width: 29%;
+      transform: translateY(-50%);
+      background-color: $red;
+    }
+
+    .a-bg {
+      position: absolute;
+      top: 66%;
+      height: 60px;
+      width: 50px;
+      left: 70px;
+      background-color: white;
+      transform: rotate(25deg);
+    }
+
+    .arrow-bg {
+      position: absolute;
+      top: 45%;
+      left: 54%;
+
+      width: 110px;
+      height: 110px;
+      background: transparent;
+      border-left: solid 55px white;
+      border-top: solid 55px transparent;
+      border-bottom: solid 55px transparent;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 49.25%;
+      left: 55%;
+      width: 40px;
+      height: 80px;
+      background: transparent;
+      border-left: solid 40px $red;
+      border-top: solid 40px transparent;
+      border-bottom: solid 40px transparent;
+    }
+  }
+}

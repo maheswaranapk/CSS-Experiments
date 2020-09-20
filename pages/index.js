@@ -65,6 +65,10 @@ const list = [
         name: "Towel",
         path: "/illustration/towel",
       },
+      {
+        name: "Avengers Logo",
+        path: "/illustration/avengers-logo",
+      },
     ],
   },
 ];
@@ -89,7 +93,7 @@ export default function Index() {
               <div className="mt-3 px-2 col-12 col-md-4 col-lg-3">
                 <Link href={item.path} key={item.name} prefetch={true}>
                   <a className="card cursor-pointer">
-                    <div className="card-body">{item.name + " Demo"}</div>
+                    <div className="card-body">{item.name}</div>
                   </a>
                 </Link>
               </div>
